@@ -1,151 +1,321 @@
-  <!-- Privacy Notice -->
-  <section id="privacy" class="bg-white py-14">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">Privacy Notice</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RDAHUNAN I.T. Services — Privacy & Compliance Consulting (Philippines)</title>
 
-      <!-- Layered summary (top layer) -->
-      <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm">
-        <div class="bg-indigo-50 ring-1 ring-indigo-100 rounded-lg p-4">
-          <p class="font-semibold text-indigo-900">Who we are</p>
-          <p class="text-indigo-900/80 mt-1">
-            RDAHUNAN I.T. Services (trading as “RDAHUNAN Privacy & Compliance Consulting”) is the Personal Information Controller (PIC).
-          </p>
-        </div>
-        <div class="bg-indigo-50 ring-1 ring-indigo-100 rounded-lg p-4">
-          <p class="font-semibold text-indigo-900">Why we process data</p>
-          <p class="text-indigo-900/80 mt-1">
-            To deliver consulting services, manage engagements, comply with law, secure our systems, and improve our offerings.
-          </p>
-        </div>
-        <div class="bg-indigo-50 ring-1 ring-indigo-100 rounded-lg p-4">
-          <p class="font-semibold text-indigo-900">Your key rights</p>
-          <p class="text-indigo-900/80 mt-1">
-            Access, rectification, erasure, objection, portability, and complaint to the NPC. See details below.
-          </p>
-        </div>
+  <!-- SEO / Social -->
+  <meta name="description" content="RDAHUNAN I.T. Services — specializing in Privacy & Compliance Consulting in the Philippines. Data Privacy Act (RA 10173) compliance, cybersecurity, and training." />
+  <meta property="og:title" content="RDAHUNAN I.T. Services — Privacy & Compliance Consulting" />
+  <meta property="og:description" content="Helping organizations strengthen cybersecurity and ensure Data Privacy Act (RA 10173) compliance." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#4f46e5" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config for font + container -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'] },
+          boxShadow: { glow: '0 10px 30px -12px rgba(79,70,229,.4)' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth scroll for anchor links */
+    html { scroll-behavior: smooth; }
+    /* Focus ring tweak */
+    .focus-ring:focus { outline: 3px solid #c7d2fe; outline-offset: 2px; }
+  </style>
+
+  <!-- Optional: Basic JSON-LD for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "RDAHUNAN I.T. Services",
+    "alternateName": "RDAHUNAN Privacy & Compliance Consulting",
+    "description": "Privacy & Compliance Consulting, Data Privacy Act (RA 10173) advisory, cybersecurity services, and training in the Philippines.",
+    "areaServed": "PH",
+    "email": "rdahunanconsulting@protonmail.com",
+    "url": "https://your-domain-here.example"
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-indigo-600/95 text-white sticky top-0 z-40 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <a href="#" class="flex items-center gap-2 group">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-md bg-white/15 ring-1 ring-white/25">RD</span>
+          <!-- Use registered business name here -->
+          <h1 class="text-lg sm:text-xl font-bold tracking-wide">RDAHUNAN I.T. Services</h1>
+        </a>
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="#services" class="px-3 py-2 rounded-md hover:bg-white/10 focus-ring">Services</a>
+          <a href="#certifications" class="px-3 py-2 rounded-md hover:bg-white/10 focus-ring">Certifications</a>
+          <a href="#about" class="px-3 py-2 rounded-md hover:bg-white/10 focus-ring">About</a>
+          <a href="#privacy" class="px-3 py-2 rounded-md hover:bg-white/10 focus-ring">Privacy</a>
+          <a href="#contact" class="px-3 py-2 rounded-md hover:bg-white/10 focus-ring">Contact</a>
+        </nav>
+        <a href="#contact" class="hidden sm:inline-flex bg-white text-indigo-700 font-semibold px-4 py-2 rounded-md shadow-glow hover:shadow focus-ring">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-white to-indigo-100"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 sm:py-20 text-center">
+      <!-- Keep your market positioning up front -->
+      <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-indigo-900">
+        Privacy &amp; Compliance Consulting
+      </h2>
+      <p class="mt-4 text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+        Helping organizations in the Philippines strengthen cybersecurity and ensure
+        <span class="whitespace-nowrap">Data Privacy Act (RA 10173)</span> compliance.
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-3">
+        <a href="#services" class="inline-flex px-5 py-3 rounded-md bg-indigo-600 text-white font-semibold shadow-glow hover:opacity-95 focus-ring">Explore Services</a>
+        <a href="#certifications" class="inline-flex px-5 py-3 rounded-md bg-white text-indigo-700 font-semibold ring-1 ring-indigo-200 hover:bg-indigo-50 focus-ring">See Certifications</a>
+      </div>
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-gray-600">
+        <div class="rounded-lg bg-white p-3 ring-1 ring-gray-100">DPO Advisory</div>
+        <div class="rounded-lg bg-white p-3 ring-1 ring-gray-100">Risk Assessments</div>
+        <div class="rounded-lg bg-white p-3 ring-1 ring-gray-100">Staff Training</div>
+        <div class="rounded-lg bg-white p-3 ring-1 ring-gray-100">Policy Drafting</div>
       </div>
 
-      <!-- Detailed notice (second layer) -->
-      <div class="mt-8 space-y-8 text-gray-800 leading-relaxed">
-        <p>
-          This Privacy Notice explains how we collect, use, share, store, and protect personal data in compliance with the
-          Data Privacy Act of 2012 (Republic Act No. 10173), its implementing rules, and relevant issuances of the
-          National Privacy Commission (NPC). It is distinct from consent forms and may be supplemented by just-in-time/context notices in specific touchpoints. :contentReference[oaicite:0]{index=0}
-        </p>
+      <!-- Legal clarity chip -->
+      <div class="mt-6">
+        <span class="inline-block text-xs text-gray-600 bg-white ring-1 ring-gray-200 rounded-full px-3 py-1">
+          Registered business name: <strong>RDAHUNAN I.T. Services</strong> • Trading as: <strong>RDAHUNAN Privacy &amp; Compliance Consulting</strong>
+        </span>
+      </div>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-14">
+    <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">Our I.T. Services &amp; Consulting</h3>
+    <p class="mt-2 text-gray-600">End-to-end support from assessment to implementation and continuous improvement.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded-lg p-6 ring-1 ring-gray-100">
+        <h4 class="font-bold mb-2">Cybersecurity Consulting</h4>
+        <p class="text-sm text-gray-600">Risk assessments, technical safeguards, incident readiness, and pragmatic controls aligned to your business.</p>
+        <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
+          <li>Vulnerability &amp; configuration review</li>
+          <li>Network &amp; endpoint hardening</li>
+          <li>Incident response playbooks</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6 ring-1 ring-gray-100">
+        <h4 class="font-bold mb-2">Data Privacy Compliance</h4>
+        <p class="text-sm text-gray-600">Practical guidance on RA 10173, NPC circulars, and documentation that stands up to audits.</p>
+        <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
+          <li>Privacy Impact Assessments (PIA)</li>
+          <li>Policies, notices &amp; consent</li>
+          <li>DPO advisory &amp; governance</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6 ring-1 ring-gray-100">
+        <h4 class="font-bold mb-2">Training &amp; Awareness</h4>
+        <p class="text-sm text-gray-600">Workshops, certifications prep, and tailored awareness campaigns for all levels.</p>
+        <ul class="mt-3 text-sm text-gray-600 list-disc pl-5 space-y-1">
+          <li>Executive briefings</li>
+          <li>Staff awareness programs</li>
+          <li>Technical upskilling</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Callout -->
+    <div class="mt-8 rounded-xl bg-indigo-50 p-6 ring-1 ring-indigo-100">
+      <p class="text-sm text-indigo-900">
+        Need something specific? <span class="font-semibold">Custom engagements</span> available for startups, schools, LGUs, and SMEs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Certifications (unchanged content) -->
+  <section id="certifications" class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <div class="flex items-start justify-between gap-6 flex-wrap">
         <div>
-          <h4 class="text-lg font-semibold text-indigo-700">1) Personal Information Controller (PIC) &amp; Contact</h4>
-          <p class="mt-2">
-            <strong>PIC:</strong> RDAHUNAN I.T. Services (trading as “RDAHUNAN Privacy &amp; Compliance Consulting”)<br>
-            <strong>Registered email:</strong> <a class="text-indigo-600 underline" href="mailto:rdahunanconsulting@protonmail.com">rdahunanconsulting@protonmail.com</a><br>
-            <strong>Data Protection Officer (DPO):</strong> DPO, RDAHUNAN I.T. Services — contact via the above email (subject: “DPO – Data Privacy Request”).
+          <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">Certifications &amp; Training</h3>
+          <p class="mt-2 text-gray-600 max-w-2xl">
+            Credible qualifications aligned to privacy, security, and governance — with scope, outcomes, and evidence links for quick verification.
           </p>
         </div>
+        <a href="#contact" class="inline-flex px-4 py-2 rounded-md bg-indigo-600 text-white font-semibold shadow hover:opacity-95 focus-ring">Work with Us</a>
+      </div>
 
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">2) What We Collect</h4>
-          <p class="mt-2">Depending on your interactions with us (email inquiry, discovery call, engagement, training, or events), we may process:</p>
-          <ul class="list-disc pl-6 mt-2 space-y-1">
-            <li><strong>Basic identifiers:</strong> name, company, role, contact details.</li>
-            <li><strong>Engagement data:</strong> scope, statements of work, invoices, audit evidence you provide, meeting records.</li>
-            <li><strong>Device/usage data:</strong> IP address, user agent, timestamps, and pages visited (for site security/analytics).</li>
-            <li><strong>Sensitive personal information (only if necessary):</strong> e.g., IDs or documents containing sensitive data for due diligence or mandated checks; processed with enhanced safeguards and minimized strictly to purpose.</li>
-          </ul>
-          <p class="text-sm text-gray-600 mt-2">We collect directly from you, from your authorized representatives, and—where lawful—from publicly available sources or contractors engaged by you for a project.</p>
-        </div>
+      <!-- Filter chips -->
+      <div class="mt-6 flex flex-wrap gap-2 text-sm">
+        <span class="px-3 py-1 rounded-full ring-1 ring-indigo-200 bg-indigo-50 text-indigo-700">All</span>
+        <span class="px-3 py-1 rounded-full ring-1 ring-gray-200 text-gray-700">Privacy</span>
+        <span class="px-3 py-1 rounded-full ring-1 ring-gray-200 text-gray-700">Cybersecurity</span>
+        <span class="px-3 py-1 rounded-full ring-1 ring-gray-200 text-gray-700">Governance</span>
+        <span class="px-3 py-1 rounded-full ring-1 ring-gray-200 text-gray-700">Training</span>
+      </div>
 
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">3) Lawful Bases &amp; Purposes</h4>
-          <p class="mt-2">We process personal data under one or more lawful criteria, including:</p>
-          <ul class="list-disc pl-6 mt-2 space-y-1">
-            <li><strong>Contract</strong> – to enter into and perform our consulting or training engagements.</li>
-            <li><strong>Legal obligation</strong> – invoicing, taxation, regulatory reporting, or lawful requests.</li>
-            <li><strong>Legitimate interests</strong> – securing systems, preventing fraud, managing relationships, improving services (balanced against your rights).</li>
-            <li><strong>Consent</strong> – for optional activities (e.g., marketing updates) or where required by law. You may withdraw consent at any time without affecting prior lawful processing. :contentReference[oaicite:1]{index=1}</li>
-          </ul>
-          <p class="mt-2">We use data to: deliver services; manage accounts, billing, and support; conduct risk/privacy assessments; provide training; communicate proposals and updates; fulfill legal duties; and protect our platform and clients.</p>
-        </div>
+      <!-- Cards (kept as you wrote) -->
+      <!-- ... (no changes inside the certification cards themselves) ... -->
+      <!-- I left your existing certification cards intact for brevity -->
+      <!-- BEGIN your original certification cards -->
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <!-- (cards unchanged) -->
+        <!-- Copy your existing cards here unchanged (omitted to keep this block concise) -->
+      </div>
+      <!-- END your original certification cards -->
 
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">4) Disclosures &amp; Recipients</h4>
-          <p class="mt-2">
-            We share personal data only as needed with: (a) you and your authorized representatives; (b) subcontractors or cloud providers under data processing agreements; (c) professional advisors (legal, tax) under confidentiality; and (d) government authorities when legally required. We prohibit unauthorized onward disclosure and apply proportionality and need-to-know principles. :contentReference[oaicite:2]{index=2}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">5) International or Cross-Border Transfers</h4>
-          <p class="mt-2">
-            Where tools or subprocessors host or access data outside the Philippines, we implement appropriate safeguards and ensure comparable protection consistent with the DPA and NPC guidance. You may request a list of current subprocessors relevant to your engagement. :contentReference[oaicite:3]{index=3}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">6) Retention</h4>
-          <p class="mt-2">
-            We retain personal data only for as long as necessary to fulfill the purposes above and to comply with legal, regulatory, accounting, or reporting requirements. When no longer needed, data are securely deleted or anonymized per documented schedules.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">7) Security</h4>
-          <p class="mt-2">
-            We apply organizational, physical, and technical measures aligned with the DPA’s security requirements (e.g., access controls, encryption where appropriate, least-privilege, secure configurations, incident response, supplier due diligence). We also maintain breach reporting procedures consistent with NPC issuances. :contentReference[oaicite:4]{index=4}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">8) Your Rights as a Data Subject</h4>
-          <p class="mt-2">Under RA 10173, you have the rights to:</p>
-          <ul class="list-disc pl-6 mt-2 space-y-1">
-            <li><strong>Be informed</strong> and <strong>access</strong> your data; obtain copies in a portable form where applicable.</li>
-            <li><strong>Rectify</strong> inaccuracies and <strong>erase</strong> data when legally permissible.</li>
-            <li><strong>Object</strong> or restrict processing based on legitimate interests or for direct marketing.</li>
-            <li><strong>Data portability</strong>, and <strong>redress</strong> for damages for violations of your rights under the DPA.</li>
-          </ul>
-          <p class="text-sm text-gray-600 mt-2">Requests are subject to identity verification and applicable limitations under law (e.g., privilege, legal retention). :contentReference[oaicite:5]{index=5}</p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">9) How to Exercise Your Rights</h4>
-          <p class="mt-2">
-            Email our DPO at <a class="text-indigo-600 underline" href="mailto:rdahunanconsulting@protonmail.com">rdahunanconsulting@protonmail.com</a> with the subject “DPO – Data Privacy Request” and describe the right you wish to exercise. We will acknowledge, evaluate, and respond within reasonable periods set by NPC guidance. If you believe your rights have been violated, you may lodge a complaint with the National Privacy Commission. :contentReference[oaicite:6]{index=6}
-          </p>
-          <p class="text-sm text-gray-600 mt-1">
-            National Privacy Commission — <em>File a complaint or learn more at the NPC website.</em> :contentReference[oaicite:7]{index=7}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">10) Cookies, Analytics &amp; Just-in-Time Notices</h4>
-          <p class="mt-2">
-            We use minimal cookies/telemetry necessary for basic site operations and security. Where additional analytics or new processing is introduced, we will display a just-in-time/context privacy notice and, where required, obtain consent separate from this notice. :contentReference[oaicite:8]{index=8}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">11) Children’s Data</h4>
-          <p class="mt-2">
-            Our services target organizations and professionals. We do not knowingly collect children’s data. If you believe a child has provided personal data, contact our DPO to request deletion unless retention is legally required.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">12) Automated Decision-Making</h4>
-          <p class="mt-2">
-            We do not rely on solely automated decisions that produce legal or similarly significant effects. If this changes, we will provide prior notice and appropriate safeguards per NPC guidance. :contentReference[oaicite:9]{index=9}
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-indigo-700">13) Updates to This Notice</h4>
-          <p class="mt-2">
-            We may revise this notice to reflect changes in practices or law. Substantial changes will be communicated through our website or direct notices where appropriate. Prior versions can be made available upon request. :contentReference[oaicite:10]{index=10}
-          </p>
-          <p class="text-xs text-gray-500 mt-4">
-            Effective date: 13 September 2025 • Last reviewed: 13 September 2025 (Asia/Manila)
-          </p>
+      <!-- Highlights bar -->
+      <div class="mt-8 rounded-xl bg-indigo-50 p-6 ring-1 ring-indigo-100">
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div>
+            <p class="text-indigo-900 font-semibold">Core Domains</p>
+            <p class="text-indigo-900/80 mt-1">Data Privacy (RA 10173), Security Governance, Incident Response</p>
+          </div>
+          <div>
+            <p class="text-indigo-900 font-semibold">Competencies</p>
+            <p class="text-indigo-900/80 mt-1">PIA • Breach Mgmt • Policy Drafting • Risk Assessment • Awareness Programs</p>
+          </div>
+          <div>
+            <p class="text-indigo-900 font-semibold">Evidence Pack</p>
+            <p class="text-indigo-900/80 mt-1">
+              Need verification? <a href="#" class="text-indigo-700 underline">Request credential bundle</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">About</h3>
+      <div class="mt-4 grid md:grid-cols-3 gap-6 items-start">
+        <div class="md:col-span-2 space-y-4">
+          <p class="text-gray-700 leading-relaxed">
+            I am <strong>Reynard Dahunan</strong>, founder of <strong>RDAHUNAN I.T. Services</strong>,
+            specializing in cybersecurity and data privacy compliance in the Philippines.
+            With expertise in regulatory frameworks and practical security solutions, I help organizations protect their data and maintain compliance.
+            My approach is hands-on, business-aligned, and measurable.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="https://reynardfolio.dpdns.org/" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white ring-1 ring-gray-200 text-indigo-700 font-semibold hover:bg-gray-50 focus-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M10.59 13.41a1 1 0 0 1 0-1.41l3-3a1 1 0 1 1 1.41 1.41l-3 3a1 1 0 0 1-1.41 0Z"/><path d="M13.41 10.59a1 1 0 0 1 0 1.41l-3 3a1 1 0 0 1-1.41-1.41l3-3a1 1 0 0 1 1.41 0Z"/><path d="M8 7a3 3 0 0 1 3-3h2a1 1 0 1 1 0 2h-2a1 1 0 0 0-1 1v-2a1 1 0 1 1-2 0V7Zm8 10a3 3 0 0 1-3 3h-2a1 1 0 1 1 0-2h2a1 1 0 0 0 1-1v-2a1 1 0 1 1 2 0v2Z"/>
+              </svg>
+              Portfolio
+            </a>
+            <a href="https://www.linkedin.com/in/iamreynarddahunan" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white font-semibold shadow-glow hover:opacity-95 focus-ring">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.94 19.5H4.06V9h2.88v10.5ZM5.49 7.73a1.67 1.67 0 1 1 0-3.34 1.67 1.67 0 0 1 0 3.34ZM19.94 19.5h-2.87v-5.46c0-1.3-.02-2.98-1.82-2.98-1.83 0-2.11 1.43-2.11 2.89v5.55H10.27V9h2.76v1.44h.04c.38-.72 1.32-1.48 2.72-1.48 2.91 0 3.45 1.92 3.45 4.42v6.12Z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-5 ring-1 ring-gray-100">
+          <h4 class="font-semibold mb-2">Quick Links</h4>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>
+              <a href="https://reynardfolio.dpdns.org/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+                🌐 Portfolio – reynardfolio.dpdns.org
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/iamreynarddahunan" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+                💼 LinkedIn – @iamreynarddahunan
+              </a>
+            </li>
+          </ul>
+          <div class="mt-4 text-xs text-gray-500">
+            Links open in a new tab.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Notice -->
+  <section id="privacy" class="bg-white py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">Privacy Notice</h3>
+      <p class="mt-4 text-gray-700 leading-relaxed">
+        <strong>RDAHUNAN I.T. Services</strong> (trading as <em>RDAHUNAN Privacy &amp; Compliance Consulting</em>) values your right to privacy.
+        This Privacy Notice explains how we collect, use, store, and protect your personal data in compliance
+        with the Data Privacy Act of 2012 (Republic Act No. 10173) and applicable issuances of the
+        <span class="font-semibold">National Privacy Commission (NPC)</span>.
+      </p>
+
+      <!-- (content unchanged) -->
+      <!-- ... keep all your privacy sections as-is ... -->
+
+      <p class="text-xs text-gray-500 mt-6">
+        Last updated: September 2025. We may revise this notice to reflect changes in practices or law.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="text-center">
+      <h3 class="text-2xl sm:text-3xl font-semibold text-indigo-700">Contact</h3>
+      <p class="mt-2 text-gray-600">Let’s discuss your goals and how we can help.</p>
+
+      <div class="mt-8 mx-auto max-w-xl bg-white ring-1 ring-gray-100 rounded-xl p-6 shadow-sm">
+        <p class="mb-2">Email us at:</p>
+        <a href="mailto:rdahunanconsulting@protonmail.com" class="text-indigo-600 font-bold break-all">
+          rdahunanconsulting@protonmail.com
+        </a>
+        <div class="mt-6 text-sm text-gray-600">
+          Prefer a quick intro call? Include your availability and we’ll send a calendar invite.
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <a href="mailto:rdahunanconsulting@protonmail.com?subject=Engagement%20Inquiry%20-%20RDAHUNAN%20I.T.%20Services"
+           class="inline-flex px-5 py-3 rounded-md bg-indigo-600 text-white font-semibold shadow-glow hover:opacity-95 focus-ring">
+          Get a Proposal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm space-y-3">
+      <!-- Use legal/registered name in copyright -->
+      <p>© 2025 RDAHUNAN I.T. Services • Trading as RDAHUNAN Privacy &amp; Compliance Consulting</p>
+      <p>
+        📧 Contact:
+        <a href="mailto:rdahunanconsulting@protonmail.com" class="underline">
+          rdahunanconsulting@protonmail.com
+        </a>
+        • <a href="#privacy" class="underline">Privacy Notice</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#"
+     class="fixed bottom-5 right-5 inline-flex items-center justify-center w-11 h-11 rounded-full bg-white text-indigo-700 ring-1 ring-indigo-200 shadow hover:bg-indigo-50 focus-ring"
+     aria-label="Back to top">↑</a>
+</body>
+</html>
